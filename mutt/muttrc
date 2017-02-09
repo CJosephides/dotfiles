@@ -1,0 +1,87 @@
+## General
+
+set realname = "Christos Josephides"
+set editor = "vim"
+set charset = "utf-8"
+
+## Index view
+
+set sort = date
+set index_format = "%4C %Z %{%b %d %R} %-15.15L (%?l?%4l&%4c?) %s"
+
+## Colors 
+
+# general-doesn't-fit stuff
+color normal     black default 
+color error      red default 
+color markers    green default 
+color tilde      blue default 
+color status     black cyan  
+
+# index stuff
+color indicator  black brightmagenta
+color tree       black default 
+color index      black default  ~A
+color index      green default  ~N
+color index      black default  ~O
+color index      black default  ~F
+color index      black default  ~D
+
+# header stuff
+color hdrdefault black default 
+color header     brightblack default  "^Subject"
+color header     brightblack default  "^From"
+color header     brightblack default  "^To"
+color header     brightblack default  "^CC"
+
+# gpg stuff
+color body       black default  "^gpg: Good signature.*"
+color body       black default  "^gpg: BAD signature.*"
+color body       black default  "^gpg: Can't check signature.*"
+color body       black default  "^-----BEGIN PGP SIGNED MESSAGE-----"
+color body       black default  "^-----BEGIN PGP SIGNATURE-----"
+color body       black default  "^-----END PGP SIGNED MESSAGE-----"
+color body       black default  "^-----END PGP SIGNATURE-----"
+color body       black default  "^Version: GnuPG.*"
+color body       black default  "^Comment: .*"
+
+# url, email and web stuff
+color body       brightblue default "(finger|ftp|http|https|news|telnet)://[^ >]*"
+color body       brightblue default "<URL:[^ ]*>"
+color body       brightblue default "www\\.[-.a-z0-9]+\\.[a-z][a-z][a-z]?([-_./~a-z0-9]+)?"
+color body       brightblue default "mailto: *[^ ]+\(\\i?subject=[^ ]+\)?"
+color body       brightblue default "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
+
+# misc body stuffblack default
+color attachment brightred default #Add-ons to the message
+color signature  red default
+
+# quote levels
+color quoted   magenta default 
+color quoted1  magenta default 
+color quoted2  magenta default 
+color quoted3  magenta default 
+color quoted4  magenta default 
+color quoted5  magenta default 
+color quoted6  magenta default 
+color quoted7  magenta default 
+color quoted8  magenta default 
+color quoted9  magenta default 
+
+## Gmail
+
+set from = "cjosephides@gmail.com"
+set use_from = yes
+set envelope_from = yes
+
+set smtp_url = "smtps://cjosephides@gmail.com@smtp.gmail.com:465/"
+#set smtp_pass = 
+set imap_user = "cjosephides@gmail.com"
+#set imaps_pass = 
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set ssl_force_tls = yes
+
+bind index G imap-fetch-mail
+unset record
+set move = no

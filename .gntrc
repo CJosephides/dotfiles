@@ -1,0 +1,76 @@
+[colors]
+# The RGB values range in [0, 1000]
+#magenta = 1000; 0; 0
+#black = 1000; 0; 0
+#default = 0; 0; 0
+#red = 1000; 0; 0
+#green = 0; 1000; 0
+#blue = 250; 250; 700
+#black = 1000; 1000; 1000
+#gray = 700; 700; 700
+#darkgray = 256; 256; 256
+
+[colorpairs]
+normal = black; default
+highlight = default; magenta
+highlightd = default; default
+shadow = black; default
+title = default; magenta
+titled = default; default
+text = default; default
+disabled = black; default
+urgent = black; default
+
+[Finch]
+color-available = green; default
+color-away = blue; default
+color-idle = gray; default
+color-offline = red; default
+color-message-sent = cyan; default
+color-message-received = red; default
+color-message-highlight = default; green
+color-message-action = yellow; default
+color-timestamp = blue; default
+
+# Hitting 'space' will activate a button
+[GntButton::remap]
+\  = \r
+
+[general]
+shadow = 0
+mouse = 1
+
+# # To use some custom window-manager
+# wm = /usr/local/lib/gnt/s.so
+# # There's also a custom window manager called irssi.so
+# # Remember window-positions based on the titles (on by default)
+# remember_position = 1
+# # Use borderless one-line high buttons
+# small-button = true
+# 
+# # Workspaces are created simply by adding Workspace-X groups as follows:
+# [Workspace-1]
+# name = blist
+# # window-names specifies that windows with these semi-colon separated names are placed into this workspace
+# window-names = buddylist;debug-window
+# 
+# [Workspace-2]
+# name = IM
+# window-names = conversation-window
+# # window-titles specifies that windows with these semi-colon separated titles are placed into this workspace. These are matched as substrings. Window titles take precedence over names.
+# window-titles = Preferences;Pounce
+# 
+# # Remap some keys for GntEntry
+# [GntEntry::remap]
+# # Remap the up-arrow to the left-arrow
+# ^[[A = ^[[D
+# # Remap the down-arrow to the right-arrow
+# ^[[B = ^[[C
+# # Remap 'a' to 'bcd'
+# a = bcd
+# # Completely ignore the key 'q'
+# q =
+# # But the following will NOT work
+# #abc = bcd
+# 
+# 

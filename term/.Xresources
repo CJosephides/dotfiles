@@ -1,0 +1,22 @@
+! Fonts
+Xft.dpi: 96
+Xft.lcdfiler: lcddefault
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+URxvt.font: xft:DejaVu Sans Mono:size=9
+URxvt.boldFont: xft:DejaVu Sans Mono:size=9:bold
+URxvt.italicFont: xft:DejaVu Sans Mono:size=9:oblique
+URxvt.boldItalicFont: xft:DejaVu Sans Mono:size=9:bold:oblique
+URxvt*letterSpace: -2
+
+! Bars
+URxvt*scrollBar: false
+
+! Scrolling
+URxvt*scrollTtyOutput:      false
+URxvt*scrollWithBuffer:     true
+URxvt*scrollTtyKeypress:    true
+
+! Colors
+! URxvt*terminalName: rxvt-unicode
