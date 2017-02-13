@@ -62,7 +62,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi SpellCap ctermbg=15 ctermfg=NONE cterm=undercurl guibg=#ffffff guifg=NONE gui=undercurl guisp=#0000ff
     hi SpellLocal ctermbg=15 ctermfg=NONE cterm=undercurl guibg=#ffffff guifg=NONE gui=undercurl guisp=#ff00ff
     hi SpellRare ctermbg=15 ctermfg=NONE cterm=undercurl guibg=#ffffff guifg=NONE gui=undercurl guisp=#00ffff
-    hi ColorColumn ctermbg=12 ctermfg=8 cterm=NONE guibg=#0000ff guifg=#808080 gui=NONE
+    hi ColorColumn ctermbg=7 ctermfg=8 cterm=NONE guibg=#0000ff guifg=#808080 gui=NONE
     hi signColumn ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
     hi ErrorMsg ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
     hi ModeMsg ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
@@ -127,7 +127,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi SpellCap ctermbg=white ctermfg=NONE cterm=undercurl
     hi SpellLocal ctermbg=white ctermfg=NONE cterm=undercurl
     hi SpellRare ctermbg=white ctermfg=NONE cterm=undercurl
-    hi ColorColumn ctermbg=blue ctermfg=darkgray cterm=NONE
+    hi ColorColumn ctermbg=gray ctermfg=darkgray cterm=NONE
     hi signColumn ctermbg=white ctermfg=darkgray cterm=NONE
     hi ErrorMsg ctermbg=white ctermfg=darkgray cterm=NONE
     hi ModeMsg ctermbg=white ctermfg=darkgray cterm=NONE
