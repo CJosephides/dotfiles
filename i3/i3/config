@@ -198,5 +198,5 @@ exec_always --no-startup-id feh --bg-scale /home/christos/Pictures/Wallpapers/bi
 # Lock screen
 bindsym $mod+Shift+o exec i3lock --color 475263
 
-# Better colors for dmenu
-bindsym $mod+d exec "dmenu_run -nf '#f3f4f5' -nb '#676e7d' -sb '#2f343f' -sf '#f3f4f5' -fn 'DejaVu Sans Mono-10' -p 'dmenu prompt >'"
+# Better dmenu
+bindsym $mod+d exec "dmenu_run -nf '#aaaaaa' -nb '#555555' -sb '#b8c7cc' -sf '#0f0f0f' -fn 'DejaVu Sans Mono-12:normal' -p 'dmenu prompt >'"
