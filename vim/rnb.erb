@@ -24,7 +24,7 @@
         author:      "Christos Josephides",
         email:       "cjosephides@gmail.com",
         name:        "ristretto",
-        description: "Light theme that works well with the Tango terminal colors.",
+        description: "Light theme..",
         background:  "light",
         webpage:     ""
     }
@@ -44,22 +44,23 @@
     #
     # The colors below are the first 16 colors of the xterm palette. They
     # are only here as an example so you can get rid of them, I won't be mad.
-    black       = ["#000000", 0, "black"]
-    darkred     = ["#800000", 1, "darkred"]
-    darkgreen   = ["#008000", 2, "darkgreen"]
-    darkyellow  = ["#808000", 3, "darkyellow"]
-    darkblue    = ["#000080", 4, "darkblue"]
-    darkmagenta = ["#800080", 5, "darkmagenta"]
-    darkcyan    = ["#008080", 6, "darkcyan"]
-    gray        = ["#c0c0c0", 7, "gray"]
-    darkgray    = ["#808080", 8, "darkgray"]
-    red         = ["#ff0000", 9, "red"]
-    green       = ["#00ff00", 10, "green"]
-    yellow      = ["#ffff00", 11, "yellow"]
-    blue        = ["#0000ff", 12, "blue"]
-    magenta     = ["#ff00ff", 13, "magenta"]
-    cyan        = ["#00ffff", 14, "cyan"]
-    white       = ["#ffffff", 15, "white"]
+    black       = ["#000000", 0, "bw0"]
+    darkred     = ["#242424", 1, "bw1"]
+    darkgreen   = ["#484848", 2, "bw2"]
+    darkyellow  = ["#6c6c6c", 3, "bw3"]
+    darkblue    = ["#909090", 4, "bw4"]
+    darkmagenta = ["#b4b4b4", 5, "bw5"]
+    darkcyan    = ["#d8d8d8", 6, "bw6"]
+    gray        = ["#fcfcfc", 7, "bw7"]
+
+    darkgray    = ["#c82829", 8, "red"]
+    red         = ["#f5871f", 9, "orange"]
+    green       = ["#eab700", 10, "yellow"]
+    yellow      = ["#718c00", 11, "green"]
+    blue        = ["#3e999f", 12, "cyan"]
+    magenta     = ["#4271ae", 13, "blue"]
+    cyan        = ["#8959a8", 14, "magenta"]
+    white       = ["#a3685a", 15, "brown"]
 
     # Step 3: highlights
     #
@@ -95,68 +96,68 @@
     # You can add any custom highlight group to the standard list below but you shouldn't
     # remove any if you want a working colorscheme.
     highlights = [
-        [ "Normal", white, black, "NONE" ],
-        [ "NonText", white, darkgray, "NONE" ],
-        [ "Comment", white, darkgray, "NONE" ],
-        [ "Constant", white, darkmagenta, "NONE" ],
-        [ "Error", red, darkgray, "NONE" ],
-        [ "Identifier", white, darkblue, "NONE" ],
-        [ "Ignore", white, darkgray, "NONE" ],
-        [ "PreProc", white, red, "NONE" ],
-        [ "Special", white, darkyellow, "NONE" ],
-        [ "Statement", white, darkred, "NONE" ],
-        [ "String", white, darkgreen, "NONE" ],
-        [ "Number", white, darkmagenta, "NONE" ],
-        [ "Todo", cyan, darkgray, "NONE" ],
-        [ "Type", white, darkmagenta, "NONE" ],
-        [ "Underlined", white, darkgray, "NONE" ],
-        [ "StatusLine", white, darkgray, "NONE" ],
-        [ "StatusLineNC", white, darkgray, "NONE" ],
-        [ "VertSplit", magenta, white, "NONE" ],
-        [ "TabLine", white, darkgray, "NONE" ],
-        [ "TabLineFill", white, darkgray, "NONE" ],
-        [ "TabLineSel", white, darkgray, "NONE" ],
-        [ "Title", white, darkgray, "NONE" ],
-        [ "CursorLine", white, darkgray, "NONE" ],
-        [ "LineNr", white, gray, "NONE" ],
-        [ "CursorLineNr", white, darkgray, "NONE" ],
-        [ "helpLeadBlank", white, darkgray, "NONE" ],
-        [ "helpNormal", white, darkgray, "NONE" ],
-        [ "Visual", green, darkgray, "NONE" ],
-        [ "VisualNOS", green, darkgray, "NONE" ],
-        [ "Pmenu", white, darkgray, "NONE" ],
-        [ "PmenuSbar", white, darkgray, "NONE" ],
-        [ "PmenuSel", white, darkgray, "NONE" ],
-        [ "PmenuThumb", white, darkgray, "NONE" ],
-        [ "FoldColumn", white, darkgray, "NONE" ],
-        [ "Folded", green, darkgray, "NONE" ],
-        [ "WildMenu", white, darkgray, "NONE" ],
-        [ "SpecialKey", white, darkgray, "NONE" ],
-        [ "DiffAdd", white, darkgreen, "NONE" ],
-        [ "DiffChange", white, darkblue, "NONE" ],
-        [ "DiffDelete", white, darkred, "NONE" ],
-        [ "DiffText", white, darkgray, "NONE" ],
-        [ "IncSearch", white, darkgray, "NONE" ],
-        [ "Search", yellow, darkgray, "NONE" ],
-        [ "Directory", white, darkgray, "NONE" ],
-        [ "MatchParen", blue, darkgray, "NONE" ],
-        [ "SpellBad", white, "NONE", "undercurl", red],
-        [ "SpellCap", white, "NONE", "undercurl", blue ],
-        [ "SpellLocal", white, "NONE", "undercurl", magenta ],
-        [ "SpellRare", white, "NONE", "undercurl", cyan ],
-        [ "ColorColumn", blue, darkgray, "NONE" ],
-        [ "signColumn", white, darkgray, "NONE" ],
-        [ "ErrorMsg", white, darkgray, "NONE" ],
-        [ "ModeMsg", white, darkgray, "NONE" ],
-        [ "MoreMsg", white, darkgray, "NONE" ],
-        [ "Question", white, darkgray, "NONE" ],
-        [ "WarningMsg", white, darkgray, "NONE" ],
-        [ "Cursor", white, darkgray, "NONE" ],
-        [ "CursorColumn", white, darkgray, "NONE" ],
-        [ "StatusLine", blue, black, "NONE" ],
-        [ "StatusLineNC", darkgray, black, "NONE" ],
-        [ "texMathZoneX", white, darkblue, "NONE" ],
-        [ "Delimiter", white, darkred, "NONE" ]
+        [ "Normal", bw7, bw1, "NONE" ],
+        [ "NonText", bw7, bw4, "NONE" ],
+        [ "Comment", bw7, bw4, "NONE" ],
+        [ "Constant", bw7, magenta, "NONE" ],
+        [ "Error", red, bw2, "NONE" ],
+        [ "Identifier", bw7, blue, "NONE" ],
+        [ "Ignore", bw7, bw2, "NONE" ],
+        [ "PreProc", bw7, red, "NONE" ],
+        [ "Special", bw7, yellow, "NONE" ],
+        [ "Statement", bw7, red, "NONE" ],
+        [ "String", bw7, green, "NONE" ],
+        [ "Number", bw7, magenta, "NONE" ],
+        [ "Todo", cyan, bw3, "NONE" ],
+        [ "Type", bw7, magenta, "NONE" ],
+        [ "Underlined", bw7, bw3, "NONE" ],
+        [ "StatusLine", bw7, bw3, "NONE" ],
+        [ "StatusLineNC", bw7, bw3, "NONE" ],
+        [ "VertSplit", magenta, bw7, "NONE" ],
+        [ "TabLine", bw7, bw3, "NONE" ],
+        [ "TabLineFill", bw7, bw3, "NONE" ],
+        [ "TabLineSel", bw7, bw3, "NONE" ],
+        [ "Title", bw7, bw3, "NONE" ],
+        [ "CursorLine", bw7, bw3, "NONE" ],
+        [ "LineNr", bw7, bw5, "NONE" ],
+        [ "CursorLineNr", bw7, bw3, "NONE" ],
+        [ "helpLeadBlank", bw7, bw3, "NONE" ],
+        [ "helpNormal", bw7, bw3, "NONE" ],
+        [ "Visual", green, bw3, "NONE" ],
+        [ "VisualNOS", green, bw3, "NONE" ],
+        [ "Pmenu", bw7, bw3, "NONE" ],
+        [ "PmenuSbar", bw7, bw3, "NONE" ],
+        [ "PmenuSel", bw7, bw3, "NONE" ],
+        [ "PmenuThumb", bw7, bw3, "NONE" ],
+        [ "FoldColumn", bw7, bw3, "NONE" ],
+        [ "Folded", green, bw3, "NONE" ],
+        [ "WildMenu", bw7, bw3, "NONE" ],
+        [ "SpecialKey", bw7, bw3, "NONE" ],
+        [ "DiffAdd", bw7, green, "NONE" ],
+        [ "DiffChange", bw7, blue, "NONE" ],
+        [ "DiffDelete", bw7, red, "NONE" ],
+        [ "DiffText", bw7, bw3, "NONE" ],
+        [ "IncSearch", bw7, bw3, "NONE" ],
+        [ "Search", yellow, bw3, "NONE" ],
+        [ "Directory", bw7, bw3, "NONE" ],
+        [ "MatchParen", blue, bw3, "NONE" ],
+        [ "SpellBad", bw7, "NONE", "undercurl", red],
+        [ "SpellCap", bw7, "NONE", "undercurl", blue ],
+        [ "SpellLocal", bw7, "NONE", "undercurl", magenta ],
+        [ "SpellRare", bw7, "NONE", "undercurl", cyan ],
+        [ "ColorColumn", blue, bw3, "NONE" ],
+        [ "signColumn", bw7, bw3, "NONE" ],
+        [ "ErrorMsg", bw7, bw3, "NONE" ],
+        [ "ModeMsg", bw7, bw3, "NONE" ],
+        [ "MoreMsg", bw7, bw3, "NONE" ],
+        [ "Question", bw7, bw3, "NONE" ],
+        [ "WarningMsg", bw7, bw3, "NONE" ],
+        [ "Cursor", bw7, bw3, "NONE" ],
+        [ "CursorColumn", bw7, bw3, "NONE" ],
+        [ "StatusLine", blue, bw0, "NONE" ],
+        [ "StatusLineNC", bw3, bw0, "NONE" ],
+        [ "texMathZoneX", bw7, blue, "NONE" ],
+        [ "Delimiter", bw7, red, "NONE" ]
     ]
 
     # Step 4: generation

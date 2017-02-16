@@ -8,7 +8,7 @@ URxvt.font: xft:DejaVu Sans Mono:size=9
 URxvt.boldFont: xft:DejaVu Sans Mono:size=9:bold
 URxvt.italicFont: xft:DejaVu Sans Mono:size=9:oblique
 URxvt.boldItalicFont: xft:DejaVu Sans Mono:size=9:bold:oblique
-URxvt*letterSpace: -2
+URxvt*letterSpace: -1
 
 ! Bars
 URxvt*scrollBar: false
@@ -19,4 +19,4 @@ URxvt*scrollWithBuffer:     true
 URxvt*scrollTtyKeypress:    true
 
 ! Colors
-! URxvt*terminalName: rxvt-unicode
+URxvt*terminalName: rxvt-unicode-256
